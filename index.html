@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heartwood Bakery</title>
+  <meta name="description" content="Freshly baked goods that remind you of home." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Heartwood Bakery home">
+        <span class="brand-icon" aria-hidden="true">🥖</span>
+        <span class="brand-name">Heartwood Bakery</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#compare">Compare</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">Baked with Love</h1>
+        <p class="hero-subtitle">
+          Freshly baked goods that remind you of home. Every bite tells a story of tradition and warmth.
+        </p>
+        <a class="btn" href="#products">Explore Our Bakery</a>
+        <div class="hero-scroll" aria-hidden="true">⌄</div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Fresh Selection</h2>
+        <p class="section-subtitle">
+          Every morning, we bake fresh goods using time-honored recipes and the finest ingredients
+        </p>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-img" data-img="bread"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <h3>Artisan Bread</h3>
+                <span class="price">$6.50</span>
+              </div>
+              <p>Handcrafted daily with organic flour and traditional techniques</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img" data-img="croissant"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <h3>Butter Croissants</h3>
+                <span class="price">$4.25</span>
+              </div>
+              <p>Flaky, buttery layers that melt in your mouth</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img" data-img="cookies"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <h3>Chocolate Cookies</h3>
+                <span class="price">$2.75</span>
+              </div>
+              <p>Rich, chewy cookies loaded with premium chocolate chips</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img" data-img="loaf"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <h3>Sourdough Loaf</h3>
+                <span class="price">$7.00</span>
+              </div>
+              <p>Tangy and crusty, naturally leavened for 24 hours</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img" data-img="rolls"></div>
+            <div class="product-body">
+              <div class="product-row">
+                <h3>Cinnamon Rolls</h3>
+                <span class="price">$3.50</span>
+              </div>
+              <p>Warm, gooey rolls with cream cheese frosting</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Story</h2>
+        <p class="section-subtitle">
+          For over 50 years, our family bakery has been creating moments of joy, one loaf at a time.
+        </p>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🕒</div>
+            <h3>Baked Fresh Daily</h3>
+            <p>We start baking at 4 AM every morning to ensure you get the freshest products possible.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">♡</div>
+            <h3>Made with Love</h3>
+            <p>Each recipe has been perfected over generations, bringing warmth and comfort to every bite.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🏅</div>
+            <h3>Premium Ingredients</h3>
+            <p>We source only the finest organic flour, butter, and ingredients from local suppliers.</p>
+          </article>
+        </div>
+
+        <div class="highlight-card">
+          <h3>A Tradition of Excellence</h3>
+          <p>
+            What started as a small neighborhood bakery has grown into a beloved community staple.
+            Our commitment to quality and authenticity has never wavered.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARE (tabs) -->
+    <section id="compare" class="section">
+      <div class="container">
+        <h2 class="section-title">Compare Our Breads</h2>
+        <p class="section-subtitle">Each bread has its own unique character. Choose the one that speaks to you.</p>
+
+        <div class="tabs" role="tablist" aria-label="Bread comparison tabs">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="sourdough">Sourdough</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="artisan">Artisan White</button>
+        </div>
+
+        <div class="compare-panel">
+          <div class="compare-img" id="compareImg" aria-hidden="true"></div>
+          <div class="compare-text">
+            <h3 id="compareTitle">Sourdough</h3>
+            <p id="compareDesc">Our signature sourdough is naturally leavened using a 100-year-old starter culture.</p>
+            <ul id="compareList">
+              <li>24-hour natural fermentation</li>
+              <li>Tangy, complex flavor</li>
+              <li>Crispy crust, chewy interior</li>
+              <li>Easier to digest</li>
+              <li>Long shelf life</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Visit Us Today</h2>
+        <p class="section-subtitle">Come experience the warmth of our bakery. We'd love to hear from you!</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Get in Touch</h3>
+            <ul class="contact-list">
+              <li><span class="dot">📍</span> 123 Baker Street, Sweetville, SV 12345</li>
+              <li><span class="dot">📞</span> (555) 123-4567</li>
+              <li><span class="dot">✉️</span> hello@bakery.com</li>
+              <li><span class="dot">🕘</span> Mon–Sat: 6:00 AM – 6:00 PM · Sun: 7:00 AM – 4:00 PM</li>
+            </ul>
+          </div>
+
+          <form class="contact-card" id="contactForm" novalidate>
+            <h3>Send us a Message</h3>
+
+            <label>
+              Your Name
+              <input type="text" name="name" />
+              <small class="error" data-error-for="name"></small>
+            </label>
+
+            <label>
+              Email Address
+              <input type="email" name="email" />
+              <small class="error" data-error-for="email"></small>
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5"></textarea>
+              <small class="error" data-error-for="message"></small>
+            </label>
+
+            <button class="btn btn-full" type="submit">Send Message</button>
+            <p class="form-success" id="formSuccess" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h4>🥖 Heartwood Bakery</h4>
+        <p>Baking fresh memories since 1973. Family owned, community loved.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#products">Our Products</a><br />
+        <a href="#about">About Us</a><br />
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+        <p>Join our community and stay updated with daily specials and new creations.</p>
+        <p><strong>Facebook</strong> · <strong>Instagram</strong></p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>Made with ♡ for lovers of fresh baked goods</p>
+      <p>© <span id="year"></span> Heartwood Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
