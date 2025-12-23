@@ -37,18 +37,21 @@
     <!-- HERO -->
     <section id="home" class="hero section">
       <div class="hero-bg" aria-hidden="true"></div>
+
       <div class="container hero-content">
         <h1 class="hero-title">Baked with Love</h1>
         <p class="hero-subtitle">
           Freshly baked goods that remind you of home. Every bite tells a story of tradition and warmth.
         </p>
+
         <a class="btn" href="#products">Explore Our Bakery</a>
-        <div class="hero-scroll" aria-hidden="true">⌄</div>
+
+        <a href="#products" class="hero-scroll" aria-label="Scroll to products">↓</a>
       </div>
     </section>
 
     <!-- PRODUCTS -->
-    <section id="products" class="section">
+    <section id="products" class="section reveal">
       <div class="container">
         <h2 class="section-title">Our Fresh Selection</h2>
         <p class="section-subtitle">
@@ -57,7 +60,7 @@
 
         <div class="product-grid">
           <article class="product-card">
-            <img class="product-img" src="assets/artisan_bread.jpg" alt="Artisan Bread">
+            <img class="product-img" src="assets/artisan_bread.jpg" alt="Artisan bread">
             <div class="product-body">
               <div class="product-row">
                 <h3>Artisan Bread</h3>
@@ -68,7 +71,7 @@
           </article>
 
           <article class="product-card">
-            <img class="product-img" src="assets/butter-croissants.jpg" alt="Butter Croissant" >
+            <img class="product-img" src="assets/butter-croissants.jpg" alt="Butter croissants">
             <div class="product-body">
               <div class="product-row">
                 <h3>Butter Croissants</h3>
@@ -79,18 +82,18 @@
           </article>
 
           <article class="product-card">
-            <img class="product-img" src="assets/chocolate-cookies.jpg" alt="Chocolate Chip Cookies">
+            <img class="product-img" src="assets/chocolate-cookies.jpg" alt="Chocolate chip cookies">
             <div class="product-body">
               <div class="product-row">
                 <h3>Chocolate Cookies</h3>
                 <span class="price">$2.75</span>
               </div>
-              <p>Rich, chewy cookies loaded with premium chocolate chips</p>
+              <p>Rich, chewy rolls cookies loaded with premium chocolate chips</p>
             </div>
           </article>
 
           <article class="product-card">
-            <img class="product-img" src="assets/sourdough.jpg" alt="Sourdough Loaf">
+            <img class="product-img" src="assets/sourdough.jpg" alt="Sourdough loaf">
             <div class="product-body">
               <div class="product-row">
                 <h3>Sourdough Loaf</h3>
@@ -101,7 +104,7 @@
           </article>
 
           <article class="product-card">
-            <img class="product-img" src="assets/cinnamon-rolls.jpg" alt="Cinnamon Rolls">
+            <img class="product-img" src="assets/cinnamon-rolls.jpg" alt="Cinnamon rolls">
             <div class="product-body">
               <div class="product-row">
                 <h3>Cinnamon Rolls</h3>
@@ -115,7 +118,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
       <div class="container">
         <h2 class="section-title">Our Story</h2>
         <p class="section-subtitle">
@@ -124,7 +127,24 @@
 
         <div class="feature-grid">
           <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">🕒</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <path
+      d="M12 2C12 8 8 10 8 14C8 18 12 22 12 22C12 22 16 18 16 14C16 10 12 8 12 2Z"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+            </div>
             <h3>Baked Fresh Daily</h3>
             <p>We start baking at 4 AM every morning to ensure you get the freshest products possible.</p>
           </article>
@@ -153,7 +173,7 @@
     </section>
 
     <!-- COMPARE (tabs) -->
-    <section id="compare" class="section">
+    <section id="compare" class="section reveal">
       <div class="container">
         <h2 class="section-title">Compare Our Breads</h2>
         <p class="section-subtitle">Each bread has its own unique character. Choose the one that speaks to you.</p>
@@ -164,7 +184,8 @@
         </div>
 
         <div class="compare-panel">
-          <div class="compare-img" id="compareImg" aria-hidden="true"></div>
+          <!-- changed div -> img so we can swap images with JS -->
+          <img class="compare-img" id="compareImg" src="assets/sourdough.jpg" alt="Sourdough loaf">
           <div class="compare-text">
             <h3 id="compareTitle">Sourdough</h3>
             <p id="compareDesc">Our signature sourdough is naturally leavened using a 100-year-old starter culture.</p>
@@ -181,7 +202,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <section id="contact" class="section reveal">
       <div class="container">
         <h2 class="section-title">Visit Us Today</h2>
         <p class="section-subtitle">Come experience the warmth of our bakery. We'd love to hear from you!</p>
@@ -253,8 +274,6 @@
       <p>© <span id="year"></span> Heartwood Bakery. All rights reserved.</p>
     </div>
   </footer>
-
-  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
